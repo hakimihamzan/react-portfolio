@@ -1,12 +1,13 @@
 import React from 'react'
+import styles from './CTA.module.css'
 // import cv from '../../assets/cv.pdf'
 
 const CTA = () => {
     const cv = "get from top"
     return (
-        <div className='cta'>
-            <a href={cv} download className='btn'>Get Resume</a>
-            <a href="#contact" className='btn btn-primary'>Contact Me</a>
+        <div className={styles.cta}>
+            <a href={cv} download><button>Get Resume</button></a>
+            <a href="#contact"><button className={styles.revert}>Contact Me</button></a>
         </div>
     )
 }

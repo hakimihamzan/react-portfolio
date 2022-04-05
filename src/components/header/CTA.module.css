@@ -1,0 +1,35 @@
+.cta {
+  display: flex;
+  gap: 1rem;
+}
+
+button {
+  background-color: var(--color-bg);
+  color: var(--color-primary);
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: 1px solid var(--color-primary);
+  transition: var(--transition);
+  padding: 1rem;
+  font-size: medium;
+  font-family: inherit;
+}
+
+button.revert {
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+  border: 1px solid var(--color-bg);
+}
+
+button:hover {
+  background: var(--color-white);
+  color: var(--color-bg);
+  border-color: transparent;
+}
+
+@media screen and (max-height: 700px) {
+  button {
+    font-size: 80%;
+    padding: 0.8rem;
+  }
+}
