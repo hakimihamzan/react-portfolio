@@ -152,7 +152,7 @@ h2 {
   gap: 2rem;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
   .experience__frontend > div,
   .experience__backend > div {
     display: grid;
@@ -172,5 +172,9 @@ h2 {
   .experience__backend {
     width: 90%;
     padding: 3rem 2rem;
+  }
+
+  section {
+    margin-top: 5rem;
   }
 }
