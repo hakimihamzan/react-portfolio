@@ -25,7 +25,7 @@ const Portfolio = () => {
                     <img className={styles.portfolio__image} src={port} alt="" />
                     <h4>Lorem ipsum dolor sit amet</h4>
                     <p className='text-light'>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
-                    <Modal name='' />
+                    <button>More Info</button>
                 </div>
             </div>
         </section>

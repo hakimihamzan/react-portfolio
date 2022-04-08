@@ -10,7 +10,6 @@
 }
 
 .project {
-  /* height: 500px; */
   background-color: var(--color-bg);
   border: 1px solid transparent;
   transition: var(--transition);
@@ -43,6 +42,12 @@
   margin-top: 1rem;
   margin-right: 5px;
   border-radius: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .project {
+    height: max-content;
+  }
 }
 
 @media screen and (max-width: 360px) {
