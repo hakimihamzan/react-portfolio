@@ -81,7 +81,7 @@ function ExtraInfo({ handleClose, name }) {
                     ))}
                     </ul>
                     <br />
-                    <p><span className={styles.paraStyled}>Tech Stack</span> {`   `}{currentProject.techStack}</p>
+                    {/* <p><span className={styles.paraStyled}>Tech Stack</span> {`   `}{currentProject.techStack}</p>
                     <br />
                     {currentProject.designInspired.length > 0 ? (
                         <>
@@ -92,7 +92,7 @@ function ExtraInfo({ handleClose, name }) {
                                 ))}
                             </ul>
                         </>
-                    ) : (<p>UI Inspiration : Original</p>)}
+                    ) : (<p>UI Inspiration : Original</p>)} */}
                 </div>
             </div>
 

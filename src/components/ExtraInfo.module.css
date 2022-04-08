@@ -5,6 +5,8 @@
   padding: 0.4rem 0.8rem;
   font-weight: bold;
   z-index: 5000;
+  border-radius: 0;
+  background-color: transparent;
 }
 
 .infoContainer {
@@ -129,6 +131,11 @@
     margin: 0;
   }
 
+  .button {
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+
   .canvas {
     max-height: 35vh;
     /* overflow: scroll; */
@@ -142,8 +149,8 @@
   }
 
   .canvas > div {
-    bottom: 1rem;
-    right: 1rem;
+    bottom: 0.5rem;
+    right: 0.5rem;
   }
 
   .canvas > div > button {
