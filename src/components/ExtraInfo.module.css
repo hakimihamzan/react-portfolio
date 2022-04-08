@@ -1,7 +1,158 @@
-.buttt {
+.button {
   position: absolute;
   top: 2rem;
   right: 2rem;
-  padding: 1rem 1rem;
+  padding: 0.4rem 0.8rem;
   font-weight: bold;
+  z-index: 5000;
+}
+
+.infoContainer {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  margin: 5rem;
+}
+
+.canvas {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.canvas img {
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.canvas > div {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: var(--color-bg-variant);
+  color: var(--color-primary);
+  /* padding: 0.5rem 1rem; */
+}
+.canvas > div > button {
+  padding: 0.1rem 0.4rem;
+  border-radius: 0;
+  font-size: 1rem;
+  font-weight: 900;
+  /* box-shadow: 4px 4px 2px #b9b9b95a; */
+  /* border: none; */
+}
+.canvas > div > button > a:hover {
+  color: black;
+}
+.canvas > div > button > a {
+  display: flex;
+  /* justify-content: ; */
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.1rem 0.4rem;
+}
+
+.extraInfo {
+  color: var(--color-primary);
+  background-image: url(../assets/bg-texture.png);
+  background-color: rgba(0, 0, 0, 0.586);
+  padding: 2rem;
+  height: 70vh;
+  overflow: scroll;
+}
+
+.extraInfo::-webkit-scrollbar {
+  display: block;
+  width: 3px;
+  height: 0;
+  background-color: var(--color-bg-variant);
+}
+
+.extraInfo::-webkit-scrollbar-thumb {
+  background: grey;
+}
+
+.extraInfo h2 {
+  text-align: left;
+  margin-bottom: 5px;
+  color: var(--color-primary-variant);
+}
+
+.headingTitle {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: var(--color-bg-variant);
+  color: var(--color-primary);
+  padding: 0.5rem 1rem;
+  box-shadow: 4px 4px 2px #b9b9b95a;
+}
+
+.ul {
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+
+.date {
+  margin-top: 1rem;
+  padding: 0.2rem 0.5rem;
+  display: inline-block;
+  color: var(--color-bg);
+  background-color: var(--color-primary);
+}
+
+.paraStyled {
+  background-color: aliceblue;
+  color: black;
+  padding: 0.1rem 0.4rem;
+}
+@media screen and (max-width: 1080px) {
+  .infoContainer {
+    grid-template-columns: 1fr;
+    margin: 5rem;
+  }
+
+  .canvas,
+  .extraInfo {
+    max-height: 40vh;
+  }
+
+  .canvas img {
+    min-height: 100%;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 650px) {
+  .infoContainer {
+    margin: 0;
+  }
+
+  .canvas {
+    max-height: 35vh;
+    /* overflow: scroll; */
+  }
+  .extraInfo {
+    max-height: 65vh;
+    /* overflow: scroll; */
+  }
+  .extraInfo {
+    padding: 1rem;
+  }
+
+  .canvas > div {
+    bottom: 1rem;
+    right: 1rem;
+  }
+
+  .canvas > div > button {
+    padding: 0.1rem;
+    font-size: 0.75rem;
+    width: 80px;
+  }
+  .canvas > div > button > a {
+    justify-content: center;
+    /* align-items: center; */
+  }
 }
