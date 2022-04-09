@@ -45,15 +45,12 @@
   border-radius: 0;
   font-size: 1rem;
   font-weight: 900;
-  /* box-shadow: 4px 4px 2px #b9b9b95a; */
-  /* border: none; */
 }
 .canvas > div > button > a:hover {
   color: black;
 }
 .canvas > div > button > a {
   display: flex;
-  /* justify-content: ; */
   align-items: center;
   gap: 0.4rem;
   padding: 0.1rem 0.4rem;
@@ -96,7 +93,7 @@
 }
 
 .ul {
-  margin-left: 2rem;
+  margin-left: 1rem;
   margin-top: 2rem;
 }
 
@@ -150,7 +147,7 @@
     /* overflow: scroll; */
   }
   .extraInfo {
-    padding: 1rem;
+    padding: 4.5rem 2rem;
   }
 
   .canvas > div {

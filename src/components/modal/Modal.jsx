@@ -26,7 +26,6 @@ export default function BasicModal({ name }) {
             <Modal
                 open={open}
                 onClose={handleClose}
-                // onClick={handleClose}
                 aria-labelledby="modal-modal-title"
                 aria-describedby="modal-modal-description"
             >

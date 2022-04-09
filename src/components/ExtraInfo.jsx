@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './ExtraInfo.module.css'
-import { FaGithub, FaEye, FaPhone, FaMobile, FaTablet, FaLaptop } from 'react-icons/fa'
+import { FaGithub, FaEye, FaPhone, FaMobile, FaTablet, FaLaptop, FaExternalLinkAlt } from 'react-icons/fa'
 import data from '../data'
 
 
@@ -29,7 +29,7 @@ function ExtraInfo({ handleClose, name }) {
                     </ul>
 
                     <br />
-                    <p style={{ fontWeight: 'bolder', textDecoration: 'underline' }}>TECH STACK</p>
+                    <p style={{ fontWeight: 'bolder', textDecoration: 'underline', marginTop: '0.8rem' }}>TECH STACK</p>
                     <div style={{ marginTop: '0.5rem' }}>
                         {currentProject.techStack.map((tech, index) => (
                             <span key={index} dangerouslySetInnerHTML={{ __html: tech }} ></span>
@@ -37,7 +37,7 @@ function ExtraInfo({ handleClose, name }) {
                     </div>
 
                     <br />
-                    <p style={{ fontWeight: 'bolder', textDecoration: 'underline' }}>WORKS ON</p>
+                    <p style={{ fontWeight: 'bolder', textDecoration: 'underline', marginTop: '0.8rem' }}>SUPPORTED PLATFORMS</p>
                     <div style={{ marginTop: '0.5rem', display: 'flex', alignItems: 'center' }}>
                         {currentProject.responsive ? (
                             <>
@@ -51,10 +51,10 @@ function ExtraInfo({ handleClose, name }) {
                     </div>
 
                     <br />
-                    <p style={{ fontWeight: 'bolder', textDecoration: 'underline' }}>DESIGN INSPIRATION</p>
+                    <p style={{ fontWeight: 'bolder', textDecoration: 'underline', marginTop: '0.8rem' }}>DESIGN INSPIRATION</p>
                     {currentProject.designInspired.length > 0 ? (
                         <ul style={{ marginLeft: '1rem', marginTop: '0.5rem' }}>{currentProject.designInspired.map((design, index) => (
-                            <li key={index}><a href={design.url} target="_blank" rel="noopener noreferrer">{design.title} by {design.creator}</a></li>
+                            <li key={index}><a href={design.url} target="_blank" rel="noopener noreferrer">{design.title} by {design.creator} <FaExternalLinkAlt style={{ transform: 'translateY(2px)', marginLeft: '0.5rem', cursor: 'pointer' }} /></a></li>
                         ))}
                         </ul>
                     ) : (<div style={{ color: 'var(--color-primary-variant)', fontWeight: 'bolder' }}>ORIGINAL</div>)}
