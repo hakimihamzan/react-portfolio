@@ -9,7 +9,7 @@ const style = {
     position: 'fixed',
     width: '100vw',
     height: '100vh',
-    bgcolor: 'var(--color-bg)',
+    bgcolor: 'rgba(167, 167, 167, 0.536)',
     color: 'black',
     boxShadow: 0,
     p: 0,
@@ -26,11 +26,12 @@ export default function BasicModal({ name }) {
             <Modal
                 open={open}
                 onClose={handleClose}
+                // onClick={handleClose}
                 aria-labelledby="modal-modal-title"
                 aria-describedby="modal-modal-description"
             >
                 <Fade in={open}>
-                    <Box sx={style}>
+                    <Box sx={style} >
                         <ExtraInfo handleClose={handleClose} name={name} />
                     </Box>
                 </Fade>
