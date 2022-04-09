@@ -15,7 +15,9 @@ function ExtraInfo({ handleClose, name }) {
                 <div className={styles.canvas}>
                     <div>
                         <button><a href={currentProject.codeUrl} rel="noreferrer" target='_blank'> <FaGithub />CODE</a></button>
-                        <button><a href={currentProject.url} rel="noreferrer" target='_blank'><FaEye />LIVE</a></button>
+                        {currentProject.url !== '' && (
+                            <button>< a href={currentProject.url} rel="noreferrer" target='_blank'><FaEye />LIVE</a></button>
+                        )}
                     </div>
                     <img src={currentProject.snap} alt="project" />
                 </div>

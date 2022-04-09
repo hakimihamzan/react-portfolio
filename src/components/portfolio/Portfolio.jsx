@@ -17,7 +17,7 @@ const Portfolio = () => {
                     <div className={styles.project} key={index}>
                         <img className={styles.portfolio__image} src={data[name].snap} alt="" />
                         <h4>{data[name].title}</h4>
-                        <p className='text-light'>{data[name].heading.substring(0, 60)}...</p>
+                        <p className='text-light'>{data[name].heading.substring(0, 51)}...</p>
                         <Modal name={name} />
                     </div>
                 ))}
