@@ -1,0 +1,16 @@
+footer {
+  min-height: 280px;
+  margin-top: 7rem;
+  padding-top: 5.5rem;
+  background-color: var(--color-bg-transparent);
+  text-align: center;
+  font-weight: bold;
+  color: var(--color-primary);
+}
+
+footer > div {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}

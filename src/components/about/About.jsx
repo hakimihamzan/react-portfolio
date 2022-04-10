@@ -4,8 +4,8 @@ import styles from './About.module.css'
 const About = () => {
     return (
         <section id='about'>
-            <h5>Get To Know</h5>
-            <h2>About Me</h2>
+            <h5>My Story</h5>
+            <h2 className={styles.aboutHeading}>How it Happened</h2>
 
             <div className={styles.aboutContainer}>
                 <h2>My name is Muhamad Hakimi Bin Hamzan and I am from Malaysia</h2>
