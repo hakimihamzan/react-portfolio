@@ -1,9 +1,33 @@
-import React from 'react'
 import styles from './Contact.module.css'
-import { FaExternalLinkAlt, FaGithub, FaLinkedin } from 'react-icons/fa'
+import { FaExternalLinkAlt, FaGithub, FaLinkedin, FaCheck } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
+import React, { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
+
 
 const Contact = () => {
+    const [isSuccess, setIsSuccess] = useState(false)
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_55ac8fe', 'template_rwy8a6o', form.current, process.env.REACT_APP_EMAILJS_API)
+            .then((result) => {
+                console.log(result.text);
+                setIsSuccess(true)
+                setTimeout(() => {
+                    setIsSuccess(prev => !prev)
+                }, 3500);
+
+            }, (error) => {
+                console.log(error.text);
+            });
+
+        e.target.reset()
+    };
+
     return (
         <section className={styles.contactSection} id='contact'>
             <h5>My Contact</h5>
@@ -32,12 +56,12 @@ const Contact = () => {
 
                 </div>
                 <div className={styles.form}>
-                    <h3>SEND MESSAGE</h3>
-                    <form>
+                    <h3>Send Message</h3>
+                    <form ref={form} onSubmit={sendEmail}>
                         <input type="text" name='name' placeholder='Your full name' required />
                         <input type="email" name="email" placeholder="Your email" required />
                         <textarea name="message" rows="10" placeholder='Your message' required></textarea>
-                        <button type="submit">Submit</button>
+                        <button type="submit">Submit {isSuccess && (<span style={{ position: 'absolute', right: '1rem' }}><FaCheck /></span>)}</button>
                     </form>
                 </div>
 

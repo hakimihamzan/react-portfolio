@@ -1,4 +1,3 @@
-import React, { useEffect, useRef, useState } from 'react'
 import AnimatedText from 'react-animated-text-content';
 import { BsFillCaretDownFill } from 'react-icons/bs'
 import './Header.css'

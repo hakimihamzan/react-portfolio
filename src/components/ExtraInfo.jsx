@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './ExtraInfo.module.css'
-import { FaGithub, FaEye, FaPhone, FaMobile, FaTablet, FaLaptop, FaExternalLinkAlt } from 'react-icons/fa'
+import { FaGithub, FaEye, FaMobile, FaTablet, FaLaptop, FaExternalLinkAlt } from 'react-icons/fa'
 import data from '../data'
 
 

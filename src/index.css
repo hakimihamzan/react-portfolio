@@ -75,11 +75,13 @@ section h2 {
   color: var(--color-primary-variant);
 }
 
-/* @media screen and (max-width: 550px) {
+@media screen and (max-width: 800px) {
   section {
-    margin-top: 5rem;
+    margin-top: 7rem;
   }
-} */
+}
+
+/*  */
 /* =====================General Styles */
 
 /* .container {
