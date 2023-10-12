@@ -67,7 +67,7 @@ const data = {
 
     bugstracking: {
         title: 'BUGSTRACKER',
-        url: 'https://bugstracker.xyz',
+        url: 'https://hakimihamzan.github.io/bug-tracker/',
         codeUrl: 'https://github.com/hakimihamzan/bug-tracker',
         heading: 'Full stack web application for submitting software defects encountered by users.',
         date: 'SEPT2021',
@@ -102,7 +102,7 @@ const data = {
 
     fitforchange: {
         title: 'FIT FOR CHANGE',
-        url: 'https://fitforchange.xyz',
+        url: 'https://hakimihamzan.github.io/Changes_Web/',
         codeUrl: 'https://github.com/hakimihamzan/Changes_Web',
         heading: 'Full static, responsive landing page for an upcoming Android application.',
         date: 'APR2021',
